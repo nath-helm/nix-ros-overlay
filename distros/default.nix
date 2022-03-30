@@ -11,7 +11,7 @@ self: super: {
 
     melodicPython3 = import ./distro-overlay.nix {
       distro = "melodic";
-      python = self.python3;
+      python = self.python36;
     } self super;
 
     noetic = import ./distro-overlay.nix {
